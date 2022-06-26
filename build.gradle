@@ -1,7 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.6.21'
     id 'maven-publish'
-    id 'idea'
 }
 
 group = 'com.casper.kotlin.sdksample2'
@@ -23,11 +22,11 @@ test {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '1.6'
 }
 
 compileTestKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '1.6'
 }
 
 publishing {
